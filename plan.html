@@ -14,71 +14,81 @@
 <main>
      
 <div class="container">
-  <section class="plan">
-    <!-- question title -->
-    <div class="title">
-        <h2>How do you drink your coffee?<h2>
-        <button type="button" class="accordion-btn">
-          <span class="up-icon">
-              <i class="fas fa-chevron-up"></i>
-          </span>
-          <span class="down-icon">
-              <i class="fas fa-chevron-down"></i>
-          </span>
-        </button>
-    </div>
-      <!-- question text -->
-      <div class="preferenc-container">
-        <div id="category" class="preference">
-           <input type="radio" name="capusle" id="capusle01">
-           <label for="capusle01">
-                <h6 class="pre-header">Capusle</h6>
-                <p class="pref-txt">Compatible with Nespresso systems and similar brewers</p>
-           </label>
-         
-        </div>
-        <div  id="filter" class="preference">
-            <input type="radio" name="capusle" id="filter02">
-            <label for="filter02">
-                <h6 class="pre-header">Filter
-                </h6>
-                <p class="pref-txt">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-            </label>
-        </div>
-        <div id="cafetiere" class="preference">
-            <input type="radio" name="capusle" id="expresso03">
-            <label for="expresso03">
-                <h6 class="pre-header">Espresso</h6>
-                <p class="pref-txt">Dense and finely ground beans for an intense, flavorful experience</p>
-           </label>    
-        </div>
-      </div>
-  </section>
-
-  <section class="plan">
+  <div class="side-menu">
+      <ul>
+          <li>Preferences</li>
+          <li>Bean Type</li>
+          <li>Quantity</li>
+          <li>Grind Option</li>
+          <li>Deliveries</li>
+      </ul>
+  </div>
+<div class="plan-container">
+    <section class="plan">
+            <!-- question title -->
+            <div class="title">
+                <h2>How do you drink your coffee?<h2>
+                <button type="button" class="accordion-btn">
+                    <span class="up-icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
+                    <span class="down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+            </div>
+                <!-- question text -->
+                <div class="preferenc-container">
+                <div  class="preference">
+                    <input type="radio" name="capusle" id="capusle01">
+                    <label for="capusle01">
+                        <h6 class="pre-header">Capusle</h6>
+                        <p class="pref-txt">Compatible with Nespresso systems and similar brewers</p>
+                    </label>
+                    
+                </div>
+                <div class="preference">
+                    <input type="radio" name="capusle" id="filter02">
+                    <label for="filter02">
+                        <h6 class="pre-header">Filter
+                        </h6>
+                        <p class="pref-txt">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                    </label>
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="capusle" id="expresso03">
+                    <label for="expresso03">
+                        <h6 class="pre-header">Espresso</h6>
+                        <p class="pref-txt">Dense and finely ground beans for an intense, flavorful experience</p>
+                    </label>    
+                </div>
+                </div>
+    </section>
+        
+    <section class="plan">
         <!-- question title -->
         <div class="title">
             <h2>What type of coffee?<h2>
             <button id="typeofcoffee" type="button" class="accordion-btn">
-              <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-              </span>
-              <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-              </span>
+                <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                </span>
+                <span class="down-icon">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
             </button>
         </div>
-          <!-- question text -->
-          <div class="preferenc-container">
-            <div " class="preference">
-               <input type="radio" name="coffeetype" id="singleorigin01">
-               <label for="singleorigin01">
+            <!-- question text -->
+            <div class="preferenc-container">
+            <div  class="preference">
+                <input type="radio" name="coffeetype" id="singleorigin01">
+                <label for="singleorigin01">
                     <h6 class="pre-header">Single Origin</h6>
                     <p class="pref-txt">Distinct, high quality coffee from a specific family-owned farm</p>
-               </label>
-             
+                </label>
+                
             </div>
-            <div  id="filter" class="preference">
+            <div class="preference">
                 <input type="radio" name="coffeetype" id="Decaf02">
                 <label for="Decaf02">
                     <h6 class="pre-header">Decaf
@@ -86,26 +96,153 @@
                     <p class="pref-txt">Just like regular coffee, except the caffeine has been removed</p>
                 </label>
             </div>
-            <div id="cafetiere" class="preference">
+            <div  class="preference">
                 <input type="radio" name="coffeetype" id="Blended03">
                 <label for="Blended03">
                     <h6 class="pre-header">Blended</h6>
                     <p class="pref-txt">Combination of two or three dark roasted beans of organic coffees</p>
-               </label>    
+                </label>    
             </div>
-          </div>
-      </section>
+            </div>
+    </section>
 
+    <section class="plan">
+            <!-- question title -->
+            <div class="title">
+                <h2>How much would you like?<h2>
+                <button id="typeofcoffee" type="button" class="accordion-btn">
+                    <span class="up-icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
+                    <span class="down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+            </div>
+                <!-- question text -->
+                <div class="preferenc-container">
+                <div  class="preference">
+                    <input type="radio" name="quatity" id="250g">
+                    <label for="250g">
+                        <h6 class="pre-header">250g</h6>
+                        <p class="pref-txt">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                    </label>
+                    
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="quatity" id="500g">
+                    <label for="500g">
+                        <h6 class="pre-header">500g
+                        </h6>
+                        <p class="pref-txt">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                    </label>
+                </div>
+                <div class="preference">
+                    <input type="radio" name="quatity" id="1000g">
+                    <label for="1000g">
+                        <h6 class="pre-header">1000g</h6>
+                        <p class="pref-txt">Perfect for offices and events. Yields about 90 delightful cups. of two or three dark roasted beans of organic coffees</p>
+                    </label>    
+                </div>
+                </div>
+    </section>
 
-      <div class="summary">
+    <section class="plan">
+            <!-- question title -->
+            <div class="title">
+                <h2>Want us to grind them?<h2>
+                <button  type="button" class="accordion-btn">
+                    <span class="up-icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
+                    <span class="down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+            </div>
+                <!-- question text -->
+            <div class="preferenc-container">
+                <div  class="preference">
+                    <input type="radio" name="grind" id="wholebean">
+                    <label for="wholebean">
+                        <h6 class="pre-header">Wholebean</h6>
+                        <p class="pref-txt">Best choice if you cherish the full sensory experience</p>
+                    </label>
+                    
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="grind" id="filter">
+                    <label for="filter">
+                        <h6 class="pre-header">Filter
+                        </h6>
+                        <p class="pref-txt">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                    </label>
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="grind" id="cafetiere">
+                    <label for="cafetiere">
+                        <h6 class="pre-header">Cafetiére</h6>
+                        <p class="pref-txt">Course ground beans specially suited for french press coffee</p>
+                    </label>    
+                </div>
+            </div>
+    </section>
+
+    <section class="plan">
+            <!-- question title -->
+            <div class="title">
+                <h2>How often should we deliver?<h2>
+                <button id="typeofcoffee" type="button" class="accordion-btn">
+                    <span class="up-icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
+                    <span class="down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+            </div>
+                <!-- question text -->
+                <div class="preferenc-container">
+                <div  class="preference">
+                    <input type="radio" name="delivery" id="everyweek">
+                    <label for="everyweek">
+                        <h6 class="pre-header">Every week</h6>
+                        <p class="pref-txt">$7.20 per shipment. Includes free first-class shipping.</p>
+                    </label>
+                    
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="delivery" id="every2weeks">
+                    <label for="every2weeks">
+                        <h6 class="pre-header">Every 2 weeks
+                        </h6>
+                        <p class="pref-txt">$9.60 per shipment. Includes free priority shipping.</p>
+                    </label>
+                </div>
+                <div  class="preference">
+                    <input type="radio" name="delivery" id="everymonth">
+                    <label for="everymonth">
+                        <h6 class="pre-header">Every month</h6>
+                        <p class="pref-txt">$12.00 per shipment. Includes free priority shipping.</p>
+                    </label>    
+                </div>
+                </div>
+    </section>
+
+    <div class="summary">
             <p> “I drink coffee <span>_____</span>, 
             with a <span> _____</span> type of bean.<span> _____</span> ground ala 
             <span>_____</span>, 
             sent to me <span>_____</span>.”?</p>
-        </div>
-
-
+    </div>
+        
+            
 </div>
+</div>
+
+
+
+
 
 
 

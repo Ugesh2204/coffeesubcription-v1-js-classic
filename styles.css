@@ -4,8 +4,28 @@
     box-sizing:border-box;
 }
 
+ul li {
+    list-style-type: none;
+    color:#fff;
+}
+
 .container {
-    width:56%;
+    width:1280px;
+    margin:0 auto;
+    display: flex;
+
+}
+
+.side-menu {
+    width:255px;
+    height: 347px;
+    margin-left:80px;
+    background-color:#0E8784;
+
+}
+
+.plan-container {
+    width:60%;
 }
 
 .title{
@@ -53,6 +73,7 @@
     margin:0rem 0.5rem 3rem 0.5rem;
     position: relative;
     border-radius:10px;
+    
 }
 .preference input {
     position: absolute;

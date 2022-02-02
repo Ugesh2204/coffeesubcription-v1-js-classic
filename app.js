@@ -11,13 +11,13 @@ accorbtns.forEach(function(btn){
     })
 })
 
-let category = document.getElementById('category');
-category.addEventListener('click', function(e){
-    let active = e.currentTarget;
-    active.classList.toggle("active");
-    let second = document.getElementById('typeofcoffee');
-    second.setAttribute("disabled", "");
+// let category = document.getElementById('category');
+// category.addEventListener('click', function(e){
+//     let active = e.currentTarget;
+//     active.classList.toggle("active");
+//     let second = document.getElementById('typeofcoffee');
+//     second.setAttribute("disabled", "");
    
-})
+// })
 
 
