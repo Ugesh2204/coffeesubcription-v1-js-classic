@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffeesubcription</title>
+ <!-- font-awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   
+<main>
+     
+<div class="container">
+  <section class="plan">
+    <!-- question title -->
+    <div class="title">
+        <h2>How do you drink your coffee?<h2>
+        <button type="button" class="accordion-btn">
+          <span class="up-icon">
+              <i class="fas fa-chevron-up"></i>
+          </span>
+          <span class="down-icon">
+              <i class="fas fa-chevron-down"></i>
+          </span>
+        </button>
+    </div>
+      <!-- question text -->
+      <div class="preferenc-container">
+        <div id="category" class="preference">
+           <input type="radio" name="capusle" id="capusle01">
+           <label for="capusle01">
+                <h6 class="pre-header">Capusle</h6>
+                <p class="pref-txt">Compatible with Nespresso systems and similar brewers</p>
+           </label>
+         
+        </div>
+        <div  id="filter" class="preference">
+            <input type="radio" name="capusle" id="filter02">
+            <label for="filter02">
+                <h6 class="pre-header">Filter
+                </h6>
+                <p class="pref-txt">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+            </label>
+        </div>
+        <div id="cafetiere" class="preference">
+            <input type="radio" name="capusle" id="expresso03">
+            <label for="expresso03">
+                <h6 class="pre-header">Espresso</h6>
+                <p class="pref-txt">Dense and finely ground beans for an intense, flavorful experience</p>
+           </label>    
+        </div>
+      </div>
+  </section>
+
+  <section class="plan">
+        <!-- question title -->
+        <div class="title">
+            <h2>What type of coffee?<h2>
+            <button id="typeofcoffee" type="button" class="accordion-btn">
+              <span class="up-icon">
+                  <i class="fas fa-chevron-up"></i>
+              </span>
+              <span class="down-icon">
+                  <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+        </div>
+          <!-- question text -->
+          <div class="preferenc-container">
+            <div " class="preference">
+               <input type="radio" name="coffeetype" id="singleorigin01">
+               <label for="singleorigin01">
+                    <h6 class="pre-header">Single Origin</h6>
+                    <p class="pref-txt">Distinct, high quality coffee from a specific family-owned farm</p>
+               </label>
+             
+            </div>
+            <div  id="filter" class="preference">
+                <input type="radio" name="coffeetype" id="Decaf02">
+                <label for="Decaf02">
+                    <h6 class="pre-header">Decaf
+                    </h6>
+                    <p class="pref-txt">Just like regular coffee, except the caffeine has been removed</p>
+                </label>
+            </div>
+            <div id="cafetiere" class="preference">
+                <input type="radio" name="coffeetype" id="Blended03">
+                <label for="Blended03">
+                    <h6 class="pre-header">Blended</h6>
+                    <p class="pref-txt">Combination of two or three dark roasted beans of organic coffees</p>
+               </label>    
+            </div>
+          </div>
+      </section>
+
+
+      <div class="summary">
+            <p> “I drink coffee <span>_____</span>, 
+            with a <span> _____</span> type of bean.<span> _____</span> ground ala 
+            <span>_____</span>, 
+            sent to me <span>_____</span>.”?</p>
+        </div>
+
+
+</div>
+
+
+
+
+
+</main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
