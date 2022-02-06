@@ -47,6 +47,9 @@ ul li {
     display:none;
 }
 
+.setgreycolor{
+    color:#ccc;
+}
 
 .preferenc-container {
     width:100%;
@@ -112,16 +115,53 @@ ul li {
    line-height: 20px;
 }
 
-.summary {
+.plan-title {
+    color:#83888F;
+}
+
+.summary-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-container .summary {
     margin-top:3rem;
     background-color: #282F38;
     padding: 2rem;
-    width:100%;
+    width:730px;
 }
 
-.summary p {
+.summary-container .summary .summary-title {
+    color:#fff;
+    font-size: 1rem;
+}
+.summary-container .summary p {
     color:#fff;
 }
+.summary-container .summary .firstoption, 
+.thirdoption, .fourthoption, .sixthoption  {
+    color:#0E8784;
+}
 
+
+
+
+.orderplan {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:1rem;
+}
+
+.orderplandisablebtn{
+    background-color:#E2DEDB;
+    color:#fff;
+
+}
+
+.orderplan .orderplanbtn {
+    padding: 1rem;
+}
 
 

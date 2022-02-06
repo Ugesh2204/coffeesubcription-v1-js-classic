@@ -18,22 +18,40 @@ radio.forEach(function(radiobtn){
     radiobtn.addEventListener('click',function(e){
         radiobtn = e.currentTarget.classList;
         let radionbtnischecked = e.currentTarget.checked;
+        let radiovalue = e.currentTarget.value;
+        console.log(radiovalue);
        
         console.log(radionbtnischecked);
+        let capusle = document.querySelector(".capusle01");
+        let filter02 = document.querySelector(".filter02");
+        let expresso03 = document.querySelector(".expresso03");
+
+        let summarycontainer = document.querySelector('.summary-container');
+        summarycontainer.innerHTML = " ";
 
      if(radionbtnischecked == true && radiobtn.contains('capusle')){
-       console.log("ok");
+        console.log("ok");
         let radioparent = e.currentTarget.parentElement;
         radioparent.classList.add('active');
-        console.log(radioparent);
-        let filter02 = document.querySelector(".filter02");
         filter02.classList.remove('active');
-
+        expresso03.classList.remove('active');
+        Capsule(radiovalue,summarycontainer);
+        
      }
-    //  else if(radionbtnischecked == false){
-    //     let radioparent = e.currentTarget.parentElement;
-    //     radioparent.classList.remove('active');
-    //  }
+     if(radionbtnischecked == true && radiobtn.contains('filter')){
+        console.log("filter");
+        let radioparent = e.currentTarget.parentElement;
+        radioparent.classList.add('active');
+        capusle.classList.remove('active');
+        expresso03.classList.remove('active');
+     }
+     if(radionbtnischecked == true && radiobtn.contains('expresso')){
+        let radioparent = e.currentTarget.parentElement;
+        radioparent.classList.add('active');
+        capusle.classList.remove('active');
+        filter02.classList.remove('active');
+     }
+   
      
      else {
         let radioparent = e.currentTarget.parentElement;
@@ -44,6 +62,23 @@ radio.forEach(function(radiobtn){
     })
 })
 
+// - If "Capsule" is selected for the first option
+//   - The "Want us to grind them?" section should be disabled and not able to be opened
+// - Order summary texts updates
+//   - If "Capsule" is selected, update the order summary text to:
+//     - "I drink my coffee **using** Capsules"
+//     - Remove the grind selection text
+function Capsule(radiovalue,summarycontainer){
+   let grindthem = document.querySelector("#wantusgrindthem");
+   grindthem.setAttribute("disabled", "");
+   let grindparent = grindthem.parentElement.parentElement;
+   grindparent.classList.add('plan-title');
+   console.log(grindparent);
+   summarycontainer.innerHTML += `<div class="summary">
+   <h3 class="summary-title">ORDER SUMMARY</h3>
+   <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
+   </div>`
+}
 
 
 
@@ -66,6 +101,8 @@ radio.forEach(function(radiobtn){
 //   - If "Capsule" is selected, update the order summary text to:
 //     - "I drink my coffee **using** Capsules"
 //     - Remove the grind selection text
+
+
 //   - If "Filter" or "Espresso" are selected, update the order summary text to:
 //     - "I drink my coffee **as** Filter||Espresso"
 //     - Keep/Add the grind selection text

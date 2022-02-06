@@ -40,14 +40,14 @@
                 <!-- question text -->
                 <div class="preferenc-container">
                     <div  class="preference capusle01">
-                        <input type="radio" name="drinkcoofee" class="capusle" id="capusle01">
+                        <input type="radio" name="drinkcoofee" class="capusle" id="capusle01" value="Capsule">
                         <label for="capusle01">
                             <h6 class="pre-header">Capusle</h6>
                             <p class="pref-txt">Compatible with Nespresso systems and similar brewers</p>
                         </label>
                     </div>
                     <div class="preference filter02 ">
-                        <input type="radio" name="drinkcoofee" id="filter02">
+                        <input type="radio" name="drinkcoofee" class="filter" id="filter02">
                         <label for="filter02">
                             <h6 class="pre-header">Filter
                             </h6>
@@ -55,7 +55,7 @@
                         </label>
                     </div>
                     <div  class="preference expresso03">
-                        <input type="radio" name="drinkcoofee" id="expresso03">
+                        <input type="radio" name="drinkcoofee" class="expresso" id="expresso03">
                         <label for="expresso03">
                             <h6 class="pre-header">Espresso</h6>
                             <p class="pref-txt">Dense and finely ground beans for an intense, flavorful experience</p>
@@ -68,7 +68,7 @@
         <!-- question title -->
         <div class="title">
             <h2>What type of coffee?<h2>
-            <button id="typeofcoffee" type="button" class="accordion-btn">
+            <button id="typeofcoffee"  type="button" class="accordion-btn">
                 <span class="up-icon">
                     <i class="fas fa-chevron-up"></i>
                 </span>
@@ -150,7 +150,7 @@
             <!-- question title -->
             <div class="title">
                 <h2>Want us to grind them?<h2>
-                <button  type="button" class="accordion-btn">
+                <button  type="button"  id="wantusgrindthem" class="accordion-btn">
                     <span class="up-icon">
                         <i class="fas fa-chevron-up"></i>
                     </span>
@@ -162,7 +162,7 @@
                 <!-- question text -->
             <div class="preferenc-container">
                 <div  class="preference">
-                    <input type="radio" name="grind" id="wholebean">
+                    <input type="radio" name="grind" id="wholebean" >
                     <label for="wholebean">
                         <h6 class="pre-header">Wholebean</h6>
                         <p class="pref-txt">Best choice if you cherish the full sensory experience</p>
@@ -228,11 +228,20 @@
                 </div>
     </section>
 
-    <div class="summary">
-            <p> “I drink coffee <span>_____</span>, 
-            with a <span> _____</span> type of bean.<span> _____</span> ground ala 
-            <span>_____</span>, 
-            sent to me <span>_____</span>.”?</p>
+    <div class="summary-container">
+        <!--<div class="summary">
+            <h3 class="summary-title">ORDER SUMMARY</h3>
+            <p> “I drink coffee <span class="firstoption">Capsule</span>, 
+            with a <span class="secondoption"> second</span> type of bean.
+            <span class="thirdoption"> third</span> ground ala 
+            <span class="fourthoption">four</span>, 
+            sent to me <span class="sixthoption">six</span>.”?</p>
+        </div>-->
+           
+    </div>
+
+    <div class="orderplan">
+        <button class="orderplanbtn">Create my plan</button>
     </div>
         
             
