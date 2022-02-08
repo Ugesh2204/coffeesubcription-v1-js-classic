@@ -26,38 +26,68 @@ radio.forEach(function(radiobtn){
         let filter02 = document.querySelector(".filter02");
         let expresso03 = document.querySelector(".expresso03");
 
-        let summarycontainer = document.querySelector('.summary-container');
-        summarycontainer.innerHTML = " ";
+       
 
-     if(radionbtnischecked == true && radiobtn.contains('capusle')){
-        console.log("ok");
-        let radioparent = e.currentTarget.parentElement;
-        radioparent.classList.add('active');
-        filter02.classList.remove('active');
-        expresso03.classList.remove('active');
-        Capsule(radiovalue,summarycontainer);
-        
-     }
-     if(radionbtnischecked == true && radiobtn.contains('filter')){
-        console.log("filter");
-        let radioparent = e.currentTarget.parentElement;
-        radioparent.classList.add('active');
-        capusle.classList.remove('active');
-        expresso03.classList.remove('active');
-     }
-     if(radionbtnischecked == true && radiobtn.contains('expresso')){
-        let radioparent = e.currentTarget.parentElement;
-        radioparent.classList.add('active');
-        capusle.classList.remove('active');
-        filter02.classList.remove('active');
-     }
+         if(radionbtnischecked == true && radiobtn.contains('capusle')){
+            console.log("ok");
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+            filter02.classList.remove('active');
+            expresso03.classList.remove('active');
+            let grindthem = document.querySelector("#wantusgrindthem");
+            grindthem.setAttribute("disabled", "");
+            let grindparent = grindthem.parentElement.parentElement;
+            grindparent.classList.add('plan-title');
+            let firstoption = document.querySelector(".firstoption");
+            firstoption.textContent =`${radiovalue}`;
+            let hidetxt = document.querySelector(".text-wrapper");
+            hidetxt.setAttribute("Style","display:none");
+         }
+
+         if(radionbtnischecked == true && radiobtn.contains('filter')){
+            console.log("filter");
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+            capusle.classList.remove('active');
+            expresso03.classList.remove('active');
+            let grindthem = document.querySelector("#wantusgrindthem");
+            grindthem.removeAttribute("disabled");
+            let grindparent = grindthem.parentElement.parentElement;
+            grindparent.classList.remove('plan-title');
+            let hidetxt = document.querySelector(".text-wrapper");
+            hidetxt.setAttribute("Style","false");
+            let firstoption = document.querySelector(".firstoption");
+            firstoption.textContent =`${radiovalue}`;
+
+          
+         }
+         if(radionbtnischecked == true && radiobtn.contains('expresso')){
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+            capusle.classList.remove('active');
+            filter02.classList.remove('active');
+            let grindthem = document.querySelector("#wantusgrindthem");
+            grindthem.removeAttribute("disabled");
+            let grindparent = grindthem.parentElement.parentElement;
+            grindparent.classList.remove('plan-title');
+            let hidetxt = document.querySelector(".text-wrapper");
+            hidetxt.setAttribute("Style","false");
+            let firstoption = document.querySelector(".firstoption");
+            firstoption.textContent =`${radiovalue}`;
+           
+         }
    
      
-     else {
-        let radioparent = e.currentTarget.parentElement;
-        radioparent.classList.add('active');
+         else {
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+
+
+          
        
      }
+
+
 
     })
 })
@@ -68,21 +98,54 @@ radio.forEach(function(radiobtn){
 //   - If "Capsule" is selected, update the order summary text to:
 //     - "I drink my coffee **using** Capsules"
 //     - Remove the grind selection text
-function Capsule(radiovalue,summarycontainer){
-   let grindthem = document.querySelector("#wantusgrindthem");
-   grindthem.setAttribute("disabled", "");
-   let grindparent = grindthem.parentElement.parentElement;
-   grindparent.classList.add('plan-title');
-   console.log(grindparent);
-   summarycontainer.innerHTML += `<div class="summary">
-   <h3 class="summary-title">ORDER SUMMARY</h3>
-   <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
-   </div>`
-}
+// function Capsule(radiovalue,summarycontainer){
+//    let grindthem = document.querySelector("#wantusgrindthem");
+//    grindthem.setAttribute("disabled", "");
+//    let grindparent = grindthem.parentElement.parentElement;
+//    grindparent.classList.add('plan-title');
+//    console.log(grindparent);
+//    summarycontainer.innerHTML = `<div class="summary">
+//    <h3 class="summary-title">ORDER SUMMARY</h3>
+//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
+//    </div>`
+// }
+
+// //   - If "Filter" or "Espresso" are selected, update the order summary text to:
+// //     - "I drink my coffee **as** Filter||Espresso"
+// //     - Keep/Add the grind selection text
+// function Filter(radiovalue,summarycontainer){
+//    let grindthem = document.querySelector("#wantusgrindthem");
+//    grindthem.setAttribute("disabled", "false");
+//    let grindparent = grindthem.parentElement.parentElement;
+//    grindparent.classList.remove('plan-title');
+//    summarycontainer.innerHTML = `<div class="summary">
+//    <h3 class="summary-title">ORDER SUMMARY</h3>
+//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>,
+//    with a <span class="secondoption"> second</span> type of bean.
+//    <span class="thirdoption"> third</span> ground ala 
+//    <span class="fourthoption">four</span>, 
+//    sent to me <span class="sixthoption">six</span>.”?
+//    </div>`
+// }
+
+// function Espresso(radiovalue,summarycontainer){
+//    let grindthem = document.querySelector("#wantusgrindthem");
+//    grindthem.setAttribute("disabled", "false");
+//    let grindparent = grindthem.parentElement.parentElement;
+//    grindparent.classList.remove('plan-title');
+//    summarycontainer.innerHTML = `<div class="summary">
+//    <h3 class="summary-title">ORDER SUMMARY</h3>
+//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
+//    with a <span class="secondoption"> second</span> type of bean.
+//    <span class="thirdoption"> third</span> ground ala 
+//    <span class="fourthoption">four</span>, 
+//    sent to me <span class="sixthoption">six</span>.”?
+//    </div>`
+// }
 
 
-
-
+// Order Summary
+// “I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”
 
 // let category = document.getElementById('category');
 // category.addEventListener('click', function(e){
