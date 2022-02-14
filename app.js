@@ -26,6 +26,10 @@ radio.forEach(function(radiobtn){
         let filter02 = document.querySelector(".filter02");
         let expresso03 = document.querySelector(".expresso03");
 
+        let singleorigin = document.querySelector(".singleorigin01");
+        let decaf = document.querySelector(".decaf02");
+        let blended = document.querySelector(".blended03");
+
        
 
          if(radionbtnischecked == true && radiobtn.contains('capusle')){
@@ -76,85 +80,53 @@ radio.forEach(function(radiobtn){
             firstoption.textContent =`${radiovalue}`;
            
          }
+
+
+         if(radionbtnischecked = true && radiobtn.contains('singleorigin')){
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+            decaf.classList.remove('active');
+            blended.classList.remove('active');
+            let singleorigin = document.querySelector(".secondoption");
+            singleorigin.textContent = `${radiovalue}`;
+
+         }
+
+         if(radionbtnischecked = true && radiobtn.contains('Decaf')){
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active');
+            singleorigin.classList.remove('active');
+            blended.classList.remove('active');
+            let decaf02 = document.querySelector(".secondoption");
+            decaf02.textContent = `${radiovalue}`;
+         }
+
+         if(radionbtnischecked = true && radiobtn.contains('Blended')){
+            let radioparent = e.currentTarget.parentElement;
+            radioparent.classList.add('active')
+            singleorigin.classList.remove('active');
+            decaf.classList.remove('active');
+            let blended03 = document.querySelector(".secondoption");
+            blended03.textContent = `${radiovalue}`;
+         }
+
+
    
      
          else {
             let radioparent = e.currentTarget.parentElement;
             radioparent.classList.add('active');
-
-
-          
-       
-     }
+         }
 
 
 
     })
 })
 
-// - If "Capsule" is selected for the first option
-//   - The "Want us to grind them?" section should be disabled and not able to be opened
-// - Order summary texts updates
-//   - If "Capsule" is selected, update the order summary text to:
-//     - "I drink my coffee **using** Capsules"
-//     - Remove the grind selection text
-// function Capsule(radiovalue,summarycontainer){
-//    let grindthem = document.querySelector("#wantusgrindthem");
-//    grindthem.setAttribute("disabled", "");
-//    let grindparent = grindthem.parentElement.parentElement;
-//    grindparent.classList.add('plan-title');
-//    console.log(grindparent);
-//    summarycontainer.innerHTML = `<div class="summary">
-//    <h3 class="summary-title">ORDER SUMMARY</h3>
-//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
-//    </div>`
-// }
-
-// //   - If "Filter" or "Espresso" are selected, update the order summary text to:
-// //     - "I drink my coffee **as** Filter||Espresso"
-// //     - Keep/Add the grind selection text
-// function Filter(radiovalue,summarycontainer){
-//    let grindthem = document.querySelector("#wantusgrindthem");
-//    grindthem.setAttribute("disabled", "false");
-//    let grindparent = grindthem.parentElement.parentElement;
-//    grindparent.classList.remove('plan-title');
-//    summarycontainer.innerHTML = `<div class="summary">
-//    <h3 class="summary-title">ORDER SUMMARY</h3>
-//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>,
-//    with a <span class="secondoption"> second</span> type of bean.
-//    <span class="thirdoption"> third</span> ground ala 
-//    <span class="fourthoption">four</span>, 
-//    sent to me <span class="sixthoption">six</span>.”?
-//    </div>`
-// }
-
-// function Espresso(radiovalue,summarycontainer){
-//    let grindthem = document.querySelector("#wantusgrindthem");
-//    grindthem.setAttribute("disabled", "false");
-//    let grindparent = grindthem.parentElement.parentElement;
-//    grindparent.classList.remove('plan-title');
-//    summarycontainer.innerHTML = `<div class="summary">
-//    <h3 class="summary-title">ORDER SUMMARY</h3>
-//    <p> “I drink coffee  using <span class="firstoption">${radiovalue}</span>, 
-//    with a <span class="secondoption"> second</span> type of bean.
-//    <span class="thirdoption"> third</span> ground ala 
-//    <span class="fourthoption">four</span>, 
-//    sent to me <span class="sixthoption">six</span>.”?
-//    </div>`
-// }
 
 
-// Order Summary
-// “I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”
 
-// let category = document.getElementById('category');
-// category.addEventListener('click', function(e){
-//     let active = e.currentTarget;
-//     active.classList.toggle("active");
-//     let second = document.getElementById('typeofcoffee');
-//     second.setAttribute("disabled", "");
-   
-// })
+
 
 // The interactive subscription page has a number of specific behaviours, which are listed below:
 

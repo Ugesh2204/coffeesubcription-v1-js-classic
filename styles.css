@@ -139,8 +139,7 @@ ul li {
 .summary-container .summary p {
     color:#fff;
 }
-.summary-container .summary .firstoption, 
-.thirdoption, .fourthoption, .sixthoption  {
+.summary-container .summary .firstoption,.secondoption,.thirdoption,.fourthoption,.sixthoption  {
     color:#0E8784;
 }
 
