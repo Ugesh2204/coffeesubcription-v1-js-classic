@@ -1,0 +1,88 @@
+/*
+================
+Fonts
+================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fraunces:wght@900&display=swap');
+
+
+/*
+================
+Variables
+================
+*/
+:root {
+    --darkcyan: hsl(179,81%,29%);
+    --darkgreyblue: hsl( 215, 19%, 25%);
+    --paleorange: hsl(25,94%,86%); 
+    --lightcreambg: hsl(43,78%,98%); 
+    --grey: hsl(215,5%,54%);
+    --lightblue :hsl(179,55%,61%);
+    --lightgray: hsl(25,11%,87%);
+    /*Font family*/   
+    --ff-primary: 'Fraunces', serif;
+    --ff-secondary: 'Barlow', sans-serif;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+*, ::after,::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-secondary);
+    color: var(--darkgreyblue);
+    font-size: 16px;
+    line-height: 24px; 
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+ h1,
+ h2,
+ h3,
+ h4 {
+     font-family: var(--ff-primary)
+ }
+
+ h1 { font-size: 72px; line-height: 72px;}
+ h2 { font-size: 40px; line-height: 48px;}
+ h3 { font-size: 32px; line-height: 35px;}
+ h4 { font-size: 24px; line-height: 32px; }
+/*
+================
+Global buttons
+================
+*/
+.btn {
+    background-color: var(--darkcyan);
+    font-family: var(--ff-primary);
+    color: var(--lightcreambg);
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 18px;
+    line-height: 25px;
+    border: 0;
+    border-radius: 5px;
+   
+}
+.btn:hover {
+    background-color: var(--lightblue);
+    --transition: all 0.3s linear;
+}
+
+.btn-disabled {
+    background-color:var(--lightgray); 
+}

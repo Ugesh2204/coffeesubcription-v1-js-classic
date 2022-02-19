@@ -3,6 +3,8 @@ let upicon = document.querySelector(".up-icon");
 let downicon = document.querySelector(".down-icon");
 
 
+
+
 accorbtns.forEach(function(btn){
     btn.addEventListener('click',function(e){
       const accordion = e.currentTarget.parentElement.parentElement.parentElement;
@@ -11,17 +13,26 @@ accorbtns.forEach(function(btn){
     })
 })
 
+
+
+
 //Card on click
 let radio = document.querySelectorAll("input");
 
 radio.forEach(function(radiobtn){
+
+ 
+
     radiobtn.addEventListener('click',function(e){
+
+ 
+
         radiobtn = e.currentTarget.classList;
         let radionbtnischecked = e.currentTarget.checked;
         let radiovalue = e.currentTarget.value;
-        console.log(radiovalue);
+      //   console.log(radiovalue);
        
-        console.log(radionbtnischecked);
+      //   console.log(radionbtnischecked);
         let capusle = document.querySelector(".capusle01");
         let filter02 = document.querySelector(".filter02");
         let expresso03 = document.querySelector(".expresso03");
@@ -33,7 +44,6 @@ radio.forEach(function(radiobtn){
        
 
          if(radionbtnischecked == true && radiobtn.contains('capusle')){
-            console.log("ok");
             let radioparent = e.currentTarget.parentElement;
             radioparent.classList.add('active');
             filter02.classList.remove('active');
@@ -46,10 +56,14 @@ radio.forEach(function(radiobtn){
             firstoption.textContent =`${radiovalue}`;
             let hidetxt = document.querySelector(".text-wrapper");
             hidetxt.setAttribute("Style","display:none");
+
+
+
+
          }
 
          if(radionbtnischecked == true && radiobtn.contains('filter')){
-            console.log("filter");
+            // console.log("filter")
             let radioparent = e.currentTarget.parentElement;
             radioparent.classList.add('active');
             capusle.classList.remove('active');
@@ -119,9 +133,31 @@ radio.forEach(function(radiobtn){
          }
 
 
+         // let radioinput = document.querySelectorAll("input");
+        
+       
+           
+         
+         let optionOne = document.querySelector(".firstoption").textContent;
+         let optionTwo = document.querySelector(".secondoption").textContent;
+         let optionThree = document.querySelector(".thirdoption").textContent;
+         let optionFourth = document.querySelector(".thirdoption").textContent;
+         let optionFifth = document.querySelector(".fourthoption").textContent;
+         let optionSix = document.querySelector(".sixthoption").textContent;
+         
+        
+         
+
+
 
     })
+
+
+
 })
+
+
+
 
 
 
