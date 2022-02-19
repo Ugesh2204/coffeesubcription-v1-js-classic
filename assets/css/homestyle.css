@@ -86,3 +86,43 @@ Global buttons
 .btn-disabled {
     background-color:var(--lightgray); 
 }
+
+/*
+================
+Home page layout
+================
+*/
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 7%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+}
+.navbar .navbar__text {
+    padding:0rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.navbar .navbar__text:hover {
+    color:var(--darkgreyblue);
+    cursor: hover;
+}
+.header .hamburger {
+    display: none;
+}
+/*
+================
+Media queries
+================
+*/
+@media (max-width:375px){
+    .header .hamburger {display: block;}
+}
