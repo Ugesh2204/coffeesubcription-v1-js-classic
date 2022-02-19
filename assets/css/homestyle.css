@@ -61,6 +61,33 @@ a {
  h2 { font-size: 40px; line-height: 48px;}
  h3 { font-size: 32px; line-height: 35px;}
  h4 { font-size: 24px; line-height: 32px; }
+
+/*
+================
+animations
+================
+*/
+ @keyframes active-menu {
+    from {
+      margin-right: -100%;
+    }
+    to {
+      margin-right: 0%;
+    }
+  }
+
+  @keyframes active-menu-l {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-right: -100%;
+    }
+  }
+
+
+
+
 /*
 ================
 Global buttons
@@ -115,6 +142,7 @@ Home page layout
     color:var(--darkgreyblue);
     cursor: hover;
 }
+
 .header .hamburger {
     display: none;
 }
@@ -123,6 +151,27 @@ Home page layout
 Media queries
 ================
 */
-@media (max-width:375px){
+@media (max-width:412px){
     .header .hamburger {display: block;}
+
+    .header .navbar {
+        width:100%;
+        position:absolute;
+        background-color: #000;
+        top:100%;
+        right:-100%;
+        height: calc(100vh - 9.5rem);
+        animation: 1s slide-left;
+    }
+
+    .header .navbar a {
+        display:block;
+        margin-top:1rem;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+  
 }
