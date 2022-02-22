@@ -235,6 +235,91 @@ Our Collection Home page
 .collection .collection__card h4 { margin-bottom: 30px;}
 
 
+/*
+================
+why choose us 
+================
+*/
+.whychooseus {
+    width:100%;
+    height: 578px;
+    background-color: var(--darkgreyblue);
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top:200px;
+    position: relative;
+    margin-bottom:48%;
+}
+
+.whychooseus .whychooseus__container {
+  display: flex;
+  width: 580px;
+  flex-direction:column;
+  
+}
+
+.whychooseus .whychooseus__container h3 {
+    color:var(--lightcreambg);
+    text-align: center;
+    margin:100px 0px 30px 0px;
+
+}
+
+.whychooseus .whychooseus__container p {
+    color:var(--lightcreambg);
+    text-align: center; 
+    padding: 0rem 2rem;
+}
+
+.cardcontainer {
+    width: 100%;
+    padding: 0px 85px 0px 85px;
+    display:flex;
+    gap:1rem;
+    position: absolute;
+    left:0;
+    top:58%;
+}
+
+.cardcontainer .cardcontainer__card {
+    flex:33.3%;
+    background-color: var(--darkcyan);
+    text-align: center;
+    padding:68px 0px 55px 0px;
+    border-radius: 10px;
+}
+
+.cardcontainer__card .coffeebean-icon{
+    width:72px;
+    height: 72px;
+}
+
+.cardcontainer__card .gif-icon{
+    width:72px;
+    height: 72px;
+}
+
+.cardcontainer__card .truck-icon {
+    width:72px;
+    height: 50px;
+}
+
+.cardcontainer__card h4 {
+    color:var(--lightcreambg);
+    font-size:24px;
+    margin: 63px 0px 30px 0px;
+}
+
+.cardcontainer__card .cardcontainerh4--hack {
+ margin-top:84px;
+}
+
+.cardcontainer__card p {
+    color:var(--lightcreambg);
+    padding: 0px 30px 0px 30px;
+}
+
 
 
 
