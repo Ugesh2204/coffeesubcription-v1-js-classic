@@ -193,6 +193,53 @@ Banner section Home
 
 /*
 ================
+Our Collection Home page
+================
+*/
+
+.collection {
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width:100%;
+    gap:1rem;
+    padding:0px 85px 0px 85px;
+    margin-top:9rem;
+    background-size: cover; 
+    position: relative;
+}
+
+.collection::after {
+    content:"";
+    position: absolute;
+    top:-127px;
+    left:25px;
+    background:url("../images/collection.png") no-repeat;
+    width:100%;
+    height: 196px;
+    z-index: -1;
+    
+}
+
+.collection .collection__card img {
+    width:250px;
+    height:193px;
+}
+
+.collection .collection__card {
+    flex:25%;
+    text-align: center;
+}
+
+.collection .collection__card h4 { margin-bottom: 30px;}
+
+
+
+
+
+/*
+================
 Media queries
 ================
 */
@@ -248,8 +295,24 @@ Media queries
         padding:0rem;
         text-align:center;
     }
+
+    /*collection*/
+    .collection { flex-wrap:wrap;}
+
+    .collection::after {
+        position:absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/Collection-mobile.png) no-repeat;
+        width: 296px;
+        height: 45px; 
+    }
     
 }
+
+
+
 
 @media (max-width:820px) and (min-width:693px){
     .section .homebanner {
@@ -277,6 +340,20 @@ Media queries
     .herocontainer .herocontainer__text {
        font-size: 15px;
        line-height: 20px;
+    }
+
+     /*collection*/
+
+     .collection { flex-wrap:wrap;}
+
+     .collection::after {
+        position:absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/collection-tab.png) no-repeat;
+        width: 100%;
+        height: 146px; 
     }
     
 }
