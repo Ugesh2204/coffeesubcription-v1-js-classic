@@ -242,51 +242,53 @@ why choose us
 */
 .whychooseus {
     width:100%;
-    height: 578px;
-    background-color: var(--darkgreyblue);
-    display:flex;
-    justify-content: center;
-    border-radius: 10px;
+    /* height: 943px; */
     margin-top:200px;
     position: relative;
-    margin-bottom:23%;
 }
 
-.whychooseus .whychooseus__container {
-  display: flex;
-  width: 580px;
-  flex-direction:column;
+.whychooseus::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 535px;
+    background-color: var(--darkgreyblue);
+    border-radius: 10px;
+    z-index: -1;
 
 }
 
-.whychooseus .whychooseus__container h3 {
+.whychooseus__container__text {
+    width:100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.whychooseus__container__text__inner {
+    max-width: 580px;
     color:var(--lightcreambg);
     text-align: center;
-    margin:100px 0px 30px 0px;
-
+    margin-top: 100px;
 }
 
-.whychooseus .whychooseus__container p {
-    color:var(--lightcreambg);
-    text-align: center;
-    padding: 0rem 2rem;
+.whychooseus__container__text__inner h3 {
+    margin-bottom: 42px;
 }
+
 
 .cardcontainer {
     width: 100%;
     padding: 0px 85px 0px 85px;
     display:flex;
     gap:1rem;
-    position: absolute;
-    left:0;
-    top:58%;
+   
 }
 
 .cardcontainer .cardcontainer__card {
     flex:33.3%;
     background-color: var(--darkcyan);
     text-align: center;
-    padding:68px 0px 55px 0px;
+    padding:54px 0px 55px 0px;
     border-radius: 10px;
 }
 
@@ -386,7 +388,13 @@ Media queries
 ================
 */
 
-@media (max-width:375px){
+/*
+================
+Smart Responsive
+================
+*/
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
 
     .header .hamburger {display: block;}
 
@@ -397,7 +405,7 @@ Media queries
         top:100%;
         right:-100%;
         height: calc(100vh - 9.5rem);
-        animation: 1s slide-left;
+        transition: right 600ms ease-in-out;
     }
 
     .header .navbar a {
@@ -407,6 +415,7 @@ Media queries
 
     .header .navbar.active {
         right: 0;
+        transition: right 600ms ease-in-out;
     }
 
     .section .homebanner {
@@ -454,6 +463,16 @@ Media queries
     }
 
     /*whychooseus*/
+
+    .whychooseus__container__text {
+        margin-bottom: 64px;
+    }
+
+    .whychooseus__container__text__inner {
+        padding: 0px 24px 0px 24px;
+    }
+
+
     .cardcontainer {
         padding: 0px 25px 0px 25px;
         display: block;
@@ -461,130 +480,20 @@ Media queries
 
     .cardcontainer .cardcontainer__card {
         flex: 33.3%;
-        margin-bottom: 25%;
+        margin-bottom: 24px;
     }
+
+  
 
 }
 
+/*
+================
+Tab Responsive
+================
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
-@media (max-width:412px){
-    .header .hamburger {display: block;}
-
-    .header .navbar {
-        width:100%;
-        position:absolute;
-        background-color: #000;
-        top:100%;
-        right:-100%;
-        height: calc(100vh - 9.5rem);
-        animation: 1s slide-left;
-    }
-
-    .header .navbar a {
-        display:block;
-        margin-top:1rem;
-    }
-
-    .header .navbar.active {
-        right: 0;
-    }
-
-    .section .homebanner {
-        width: 100%;
-        height: 500px;
-        background:url("../images/image-hero-mobile.png") no-repeat;
-         background-size: cover;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin-top:8rem;
-    }
-
-    .homebanner .herocontainer {
-        width:100%;
-        text-align: center;
-        margin-left:0px;
-        padding:0px 18px;
-    }
-
-    .herocontainer .herocontainer__title {
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom:30px;
-    }
-
-    .herocontainer .herocontainer__text {
-        color:var(--lightcreambg);
-        margin-bottom:56px;
-        padding:0rem;
-        text-align:center;
-    }
-
-    /*collection*/
-    .collection { flex-wrap:wrap;}
-
-    .collection::after {
-        position:absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: url(../images/Collection-mobile.png) no-repeat;
-        width: 296px;
-        height: 45px;
-    }
-
-    /*whychooseus*/
-    .cardcontainer {
-        padding: 0px 25px 0px 25px;
-        display: block;
-    }
-
-    .cardcontainer .cardcontainer__card {
-        flex:100%;
-        margin-bottom: 25%;
-    }
-}
-
-
-@media (max-width:768px){
-
-    .cardcontainer {
-        padding: 0px 57px 0px 57px;
-        flex-direction: column;
-    }
-
-    .cardcontainer .cardcontainer__card {
-        flex: 100%;
-        padding: 46px 48px 46px 48px;
-        display: flex;
-        align-items: center;
-    }
-
-    .cardcontainer__card .coffeebean-icon {
-        width:56px;
-        height:56px;
-    }
-
-    .cardcontainer__card .card__innertext {
-        text-align: left;
-        padding-left: 28px;
-    }
-
-    .cardcontainer__card h4 {
-        margin: 0px 0px 24px 0px;
-    }
-
-    .cardcontainer__card p {
-        color: var(--lightcreambg);
-        padding: 0px 0px 0px 0px;
-    }
-
-}
-
-
-
-
-@media (max-width:820px) and (min-width:693px){
     .section .homebanner {
         width: 100%;
         height: 500px;
@@ -593,7 +502,7 @@ Media queries
         border-radius: 10px;
         display: flex;
         align-items: center;
-        margin-top:8rem;
+        margin-top:8rem; 
     }
 
     .homebanner .herocontainer {
@@ -622,11 +531,111 @@ Media queries
         left: 50%;
         transform: translate(-50%, -50%);
         background: url(../images/collection-tab.png) no-repeat;
-        width: 100%;
+        width:691px;
         height: 146px;
+    } 
+
+     /*whychooseus*/
+
+    .whychooseus::before {
+        height: 572px;
+    }
+
+    .cardcontainer {
+        padding: 0px 57px 0px 57px;
+        flex-direction: column;
+        top: 29%;
+    }
+
+    .cardcontainer .cardcontainer__card {
+        flex: 100%;
+        padding: 46px 48px 46px 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cardcontainer__card .coffeebean-icon {
+        width:56px;
+        height:56px;
+    }
+
+    .cardcontainer__card .card__innertext {
+        text-align: left;
+        padding-left: 28px;
+    }
+
+    .cardcontainer__card h4 {
+        margin: 0px 0px 24px 0px;
+    }
+
+    .cardcontainer__card p {
+        color: var(--lightcreambg);
+        padding: 0px 0px 0px 0px;
+    }
+
+    .cardcontainer__card .cardcontainerh4--hack {
+        margin-top: 0px;
+    }
+
+    /*Howitswork*/
+
+    .howitswork {
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .howitswork h3 {
+        margin-top: 142px;
     }
 
 }
+
+
+
+
+/*
+ @media (max-width:820px) and (min-width:693px){
+    .section .homebanner {
+        width: 100%;
+        height: 500px;
+        background:url("../images/image-hero-tab.png") no-repeat;
+         background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top:8rem; 
+    }
+
+    .homebanner .herocontainer {
+        width:70%;
+        margin-left:57px;
+    }
+
+    .herocontainer .herocontainer__title {
+        margin-bottom:30px;
+        font-size:48px;
+        line-height: 48px;
+    }
+
+    .herocontainer .herocontainer__text {
+       font-size: 15px;
+       line-height: 20px;
+    }*/
+
+     /*collection*/
+
+     /* .collection { flex-wrap:wrap;}
+
+     .collection::after {
+        position:absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/collection-tab.png) no-repeat;
+        width: 100%;
+        height: 146px;
+    } */
+
+/* }  */
 
 @media (max-width:1326px) and (min-width:821px){
     .homebanner .herocontainer {
