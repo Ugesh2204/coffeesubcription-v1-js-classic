@@ -331,10 +331,13 @@ How its work
 
 .howitswork {
     padding: 0px 85px 0px 85px;
+    margin-top:200px;
+    margin-bottom:200px;
 }
 
 .howitswork h3 {
     color:var(--grey);
+    margin-bottom:80px;
 }
 
 .timelinecontainer {
@@ -377,6 +380,64 @@ How its work
     border-radius: 50%;
     border: 2px solid var(--darkcyan);
     z-index: 1;
+}
+
+.howitswork__option__wrapper {
+    display: flex;
+    gap:1rem;
+}
+
+.howitswork__option__wrapper .howitswork__box {
+    flex:33.3%;
+    margin-top:80px;
+}
+
+.howitswork__box .howitswork__box__title {
+    color: var(--paleorange);
+}
+
+.howitswork__box .howitswork__box__subtitle {
+    margin-top: 48px;
+}
+.createyourplan__container {
+    margin-top:64px;
+}
+.createyourplan__container .createyourplan--btn {
+    padding: 18px 30px;
+    font-size:18px;
+}
+
+/*
+================
+Footer
+================
+*/
+
+.footer {
+    display:flex;
+    padding:42px 7%;
+    background-color: var(--darkgreyblue);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    padding-right:116px;
+}
+
+.footer .footer__wrapper {
+    width: 70%;
+    display: flex;
+}
+
+.footer .footer__wrapper .footer__nav {
+    margin-left: 0px;
+}
+
+.footer .footer__wrapper .footer__nav a {
+    color:var(--lightgray);
+    text-transform: uppercase;
+    padding: 0px 18px;
 }
 
 
