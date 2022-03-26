@@ -1,0 +1,499 @@
+/*
+================
+Banner section Home
+================
+*/
+
+.section{
+    width: 100%;
+    padding: 0px 7%;
+}
+.section .homebanner {
+    width: 100%;
+    height: 600px;
+    background:url("../../images/image-hero-coffeepress.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top:8rem;
+}
+
+.homebanner .herocontainer {
+    width:43%;
+    margin-left:80px;
+    text-align: left;
+    margin-top:-3px;
+}
+
+.herocontainer .herocontainer__title {
+    color:var(--lightcreambg);
+    margin-bottom:30px;
+}
+
+.herocontainer .herocontainer__text {
+    color:var(--lightcreambg);
+    margin-bottom:56px;
+    padding-right:4rem;
+}
+
+.herocontainer .herocontainer--btn {
+    padding:18px 30px 18px 30px ;
+}
+
+
+/*
+================
+Our Collection Home page
+================
+*/
+
+.collection {
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width:100%;
+    gap:1rem;
+    padding:0px 85px 0px 85px;
+    margin-top:9rem;
+    background-size: cover;
+    position: relative;
+}
+
+.collection::after {
+    content:"";
+    position: absolute;
+    top:-127px;
+    left:25px;
+    background:url("../../images/collection.png") no-repeat;
+    width:100%;
+    height: 196px;
+    z-index: -1;
+
+}
+
+.collection .collection__card img {
+    width:250px;
+    height:193px;
+}
+
+.collection .collection__card {
+    flex:25%;
+    text-align: center;
+}
+
+.collection .collection__card h4 { margin-bottom: 30px;}
+
+
+/*
+================
+why choose us
+================
+*/
+.whychooseus {
+    width:100%;
+    /* height: 943px; */
+    margin-top:200px;
+    position: relative;
+}
+
+.whychooseus::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 535px;
+    background-color: var(--darkgreyblue);
+    border-radius: 10px;
+    z-index: -1;
+
+}
+
+.whychooseus__container__text {
+    width:100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.whychooseus__container__text__inner {
+    max-width: 580px;
+    color:var(--lightcreambg);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.whychooseus__container__text__inner h3 {
+    margin-bottom: 42px;
+}
+
+
+.cardcontainer {
+    width: 100%;
+    padding: 0px 85px 0px 85px;
+    display:flex;
+    gap:1rem;
+   
+}
+
+.cardcontainer .cardcontainer__card {
+    flex:33.3%;
+    background-color: var(--darkcyan);
+    text-align: center;
+    padding:54px 0px 55px 0px;
+    border-radius: 10px;
+}
+
+.cardcontainer__card .coffeebean-icon{
+    width:72px;
+    height: 72px;
+}
+
+.cardcontainer__card .gif-icon{
+    width:72px;
+    height: 72px;
+}
+
+.cardcontainer__card .truck-icon {
+    width:72px;
+    height: 50px;
+}
+
+.cardcontainer__card h4 {
+    color:var(--lightcreambg);
+    font-size:24px;
+    margin: 63px 0px 30px 0px;
+}
+
+.cardcontainer__card .cardcontainerh4--hack {
+ margin-top:84px;
+}
+
+.cardcontainer__card p {
+    color:var(--lightcreambg);
+    padding: 0px 30px 0px 30px;
+}
+
+
+/*
+================
+How its work
+================
+*/
+
+.howitswork {
+    padding: 0px 85px 0px 85px;
+    margin-top:200px;
+    margin-bottom:200px;
+}
+
+.howitswork h3 {
+    color:var(--grey);
+    margin-bottom:80px;
+}
+
+.timelinecontainer {
+    margin-top:86px;
+}
+
+.timelinecontainer__wrapper  {
+    display:flex;
+    justify-content:flex-start;
+    gap:1rem;
+    width: 100%;
+    height: 31px;
+    position: relative;
+}
+
+.timelinecontainer__wrapper::after {
+    content:"";
+    width:68%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--paleorange);
+    top:15.5px;
+    left:0;
+}
+
+.timelinecontainer__wrapper li {
+    flex:33.3%;
+    position: relative;
+
+}
+
+.timelinecontainer__wrapper li::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:31px;
+    height: 31px;
+    background-color:var(--lightcreambg);
+    border-radius: 50%;
+    border: 2px solid var(--darkcyan);
+    z-index: 1;
+}
+
+.howitswork__option__wrapper {
+    display: flex;
+    gap:1rem;
+}
+
+.howitswork__option__wrapper .howitswork__box {
+    flex:33.3%;
+    margin-top:80px;
+}
+
+.howitswork__box .howitswork__box__title {
+    color: var(--paleorange);
+}
+
+.howitswork__box .howitswork__box__subtitle {
+    margin-top: 48px;
+}
+.createyourplan__container {
+    margin-top:64px;
+}
+.createyourplan__container .createyourplan--btn {
+    padding: 18px 30px;
+    font-size:18px;
+}
+
+
+/*
+================
+Media queries
+================
+*/
+
+/*
+================
+Smart Responsive
+================
+*/
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+
+    .header .hamburger {display: block;}
+
+    .header .navbar {
+        width:100%;
+        position:absolute;
+        background-color: #000;
+        top:100%;
+        right:-100%;
+        height: calc(100vh - 9.5rem);
+        transition: right 600ms ease-in-out;
+    }
+
+    .header .navbar a {
+        display:block;
+        margin-top:1rem;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        transition: right 600ms ease-in-out;
+    }
+
+    .section .homebanner {
+        width: 100%;
+        height: 500px;
+        background:url("../../images/image-hero-mobile.png") no-repeat;
+         background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top:8rem;
+    }
+
+    .homebanner .herocontainer {
+        width:100%;
+        text-align: center;
+        margin-left:0px;
+        padding:0px 18px;
+    }
+
+    .herocontainer .herocontainer__title {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom:30px;
+    }
+
+    .herocontainer .herocontainer__text {
+        color:var(--lightcreambg);
+        margin-bottom:56px;
+        padding:0rem;
+        text-align:center;
+    }
+
+    /*collection*/
+    .collection { flex-wrap:wrap;}
+
+    .collection::after {
+        position:absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../../images/Collection-mobile.png) no-repeat;
+        width: 296px;
+        height: 45px;
+    }
+
+    /*whychooseus*/
+
+    .whychooseus__container__text {
+        margin-bottom: 64px;
+    }
+
+    .whychooseus__container__text__inner {
+        padding: 0px 24px 0px 24px;
+    }
+
+
+    .cardcontainer {
+        padding: 0px 25px 0px 25px;
+        display: block;
+    }
+
+    .cardcontainer .cardcontainer__card {
+        flex: 33.3%;
+        margin-bottom: 24px;
+    }
+
+    /*Howiswork*/
+
+    .howitswork {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+  
+
+
+    .timelinecontainer__wrapper {
+        display: none;
+    }
+
+    .howitswork__option__wrapper {
+        display: block;
+        gap: 1rem;
+    }
+
+    .howitswork__option__wrapper .howitswork__box .howitswork__box__title {
+        margin-bottom:33px;
+    }
+
+    .howitswork__option__wrapper .howitswork__box__subtitle {
+        margin-bottom:33px;
+        font-size: 32px;
+    }
+
+}
+
+/*
+================
+Tab Responsive
+================
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .section .homebanner {
+        width: 100%;
+        height: 500px;
+        background:url("../../images/image-hero-tab.png") no-repeat;
+         background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top:8rem; 
+    }
+
+    .homebanner .herocontainer {
+        width:70%;
+        margin-left:57px;
+    }
+
+    .herocontainer .herocontainer__title {
+        margin-bottom:30px;
+        font-size:48px;
+        line-height: 48px;
+    }
+
+    .herocontainer .herocontainer__text {
+       font-size: 15px;
+       line-height: 20px;
+    }
+
+     /*collection*/
+
+     .collection { flex-wrap:wrap;}
+
+     .collection::after {
+        position:absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../../images/collection-tab.png) no-repeat;
+        width:691px;
+        height: 146px;
+    } 
+
+     /*whychooseus*/
+
+    .whychooseus::before {
+        height: 572px;
+    }
+
+    .cardcontainer {
+        padding: 0px 57px 0px 57px;
+        flex-direction: column;
+        top: 29%;
+    }
+
+    .cardcontainer .cardcontainer__card {
+        flex: 100%;
+        padding: 46px 48px 46px 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cardcontainer__card .coffeebean-icon {
+        width:56px;
+        height:56px;
+    }
+
+    .cardcontainer__card .card__innertext {
+        text-align: left;
+        padding-left: 28px;
+    }
+
+    .cardcontainer__card h4 {
+        margin: 0px 0px 24px 0px;
+    }
+
+    .cardcontainer__card p {
+        color: var(--lightcreambg);
+        padding: 0px 0px 0px 0px;
+    }
+
+    .cardcontainer__card .cardcontainerh4--hack {
+        margin-top: 0px;
+    }
+
+    /*Howitswork*/
+
+    .howitswork {
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .howitswork h3 {
+        margin-top: 142px;
+    }
+
+}
+
+
+@media (max-width:1326px) and (min-width:821px){
+    .homebanner .herocontainer {
+        width:70%;
+    }
+}

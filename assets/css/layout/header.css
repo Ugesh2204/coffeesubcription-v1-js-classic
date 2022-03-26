@@ -1,0 +1,55 @@
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 7%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+}
+.navbar .navbar__text {
+    padding:0rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.navbar .navbar__text:hover {
+    color:var(--darkgreyblue);
+    cursor: hover;
+}
+
+.header .hamburger {
+    display: none;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .header .hamburger {display: block;}
+
+    .header .navbar {
+        width:100%;
+        position:absolute;
+        background-color: #000;
+        top:100%;
+        right:-100%;
+        height: calc(100vh - 9.5rem);
+        transition: right 600ms ease-in-out;
+    }
+
+    .header .navbar a {
+        display:block;
+        margin-top:1rem;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        transition: right 600ms ease-in-out;
+    }
+}
+
+

@@ -1,0 +1,25 @@
+/*
+================
+Global buttons
+================
+*/
+.btn {
+    background-color: var(--darkcyan);
+    font-family: var(--ff-primary);
+    color: var(--lightcreambg);
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 18px;
+    line-height: 25px;
+    border: 0;
+    border-radius: 5px;
+
+}
+.btn:hover {
+    background-color: var(--lightblue);
+    --transition: all 0.3s linear;
+}
+
+.btn-disabled {
+    background-color:var(--lightgray);
+}

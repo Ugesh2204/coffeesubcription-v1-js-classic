@@ -1,0 +1,113 @@
+/*
+================
+Footer
+================
+*/
+
+.footer {
+    display:flex;
+    padding:42px 7%;
+    background-color: var(--darkgreyblue);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    padding-right:116px;
+}
+
+.footer .footer__wrapper {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer__wrapper .footer__nav {
+    margin-left: 0px;
+}
+
+.footer .footer__wrapper .footer__nav a {
+    color:var(--grey);
+    text-transform: uppercase;
+    padding: 0px 18px;
+    font-weight: 600;
+}
+
+.footer .footer__wrapper .footer__nav a:hover {
+    color:var(--lightgray);
+}
+
+.footer .footer__social .sicon  {
+    margin:0px 5px 0px 5px;
+    fill:var(--lightcreambg);
+}
+
+.footer .footer__social .sicon:hover {
+   fill:var(--darkcyan);
+}
+
+/*
+================
+Media queries
+================
+*/
+
+/*
+================
+Smart Responsive
+================
+*/
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+    .footer .footer__wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .footer .footer__wrapper .footer__nav {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer .footer__wrapper .footer__nav a {
+        margin-bottom: 10px;
+    }
+
+    .footer .footer__wrapper .footer__logo {
+        padding-right: 0px;
+        padding-bottom:36px;
+    }
+
+    .footer .footer__wrapper .footer__nav {
+        padding-bottom:65px;
+    }
+    
+}
+
+/*
+================
+Tab Responsive
+================
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+    .footer .footer__wrapper {
+        width: 100%;
+        display: block;
+    }
+    .footer .footer__wrapper .footer__logo {
+        padding-right: 0px;
+        padding-bottom:36px;
+    }
+
+    .footer .footer__wrapper .footer__nav {
+        padding-bottom:65px;
+    }
+}
