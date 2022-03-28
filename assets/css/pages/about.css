@@ -1,0 +1,189 @@
+/*
+================
+Banner section About
+================
+*/
+
+.section{
+    width: 100%;
+    padding: 0px 7%;
+}
+.section .aboutbanner {
+    width: 100%;
+    height: 453px;
+    background:url("../../images/AboutBanner.png") no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top:8rem;
+}
+
+.aboutbanner .herocontainer {
+    width:43%;
+    margin-left:80px;
+    text-align: left;
+}
+
+.aboutbanner .herocontainer .herocontainer__title {
+    color:var(--lightcreambg);
+    margin-bottom:34px;
+    font-size:48px;
+}
+
+.aboutbanner .herocontainer .herocontainer__text {
+    color:var(--lightcreambg);
+    margin-bottom:56px;
+    padding-right:4rem;
+}
+
+.aboutbanner .herocontainer .herocontainer--btn {
+    padding:18px 30px 18px 30px ;
+}
+
+/*
+================
+our commitment
+================
+*/
+.ourcommitment {
+    width:100%;
+    padding:0px 85px 0px 85px;
+    display: flex;
+    gap: 90px;
+    margin-top:85px;
+    flex-wrap: wrap;
+}
+
+.ourcommitment .ourcommitment__image {
+    flex: 50%;
+}
+
+.ourcommitment .ourcommitment__image img {
+    width:100%;
+    height:520px;
+}
+
+.ourcommitment .ourcommitment__text {
+    flex: 50%;
+    display:flex;
+    align-items: center;
+}
+.ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
+.ourcommitment__textwrapper__title {
+    margin-bottom: 48px;
+}
+
+/*
+================
+Media queries
+================
+*/
+
+/*
+================
+Smart Responsive
+================
+*/
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    
+    .aboutbanner .herocontainer {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        padding:0px 30px 0px 30px;
+        margin-top: 40px;
+    }
+
+    .section .aboutbanner {
+        width: 100%;
+        height: 400px;
+        background:url("../../images/AboutBannerMobile.png") no-repeat;
+        background-size: cover;
+    }
+
+    .aboutbanner .herocontainer .herocontainer__text {
+        color: var(--lightcreambg);
+        margin-bottom: 56px;
+        padding-right: 0rem;
+        text-align: center;
+    }
+
+    .ourcommitment {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        gap: 90px;
+        margin-top: 85px;
+        flex-wrap: wrap;
+    }
+
+    .ourcommitment .ourcommitment__image img {
+        width: 100%;
+        height: 403px;
+    }
+
+    .ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
+    .ourcommitment__textwrapper__title h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .ourcommitment .ourcommitment__text .ourcommitment__textwrapper p {
+        text-align: center;
+    }
+
+}
+
+/*
+================
+Tab Responsive
+================
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .section .aboutbanner {
+        width: 100%;
+        height: 400px;
+        background:url("../../images/AboutBannertab.png") no-repeat;
+    }
+
+    .aboutbanner .herocontainer {
+        width: 70%;
+        margin-left: 65px;
+        text-align: left;
+    }
+
+    .aboutbanner .herocontainer .herocontainer__title {
+        margin-bottom: 39px;
+        font-size: 32px;
+    }
+
+    .aboutbanner .herocontainer .herocontainer__text {
+        color: var(--lightcreambg);
+        margin-bottom: 56px;
+        padding-right: 4rem;
+        font-size: 15px;
+    }
+
+    .ourcommitment {
+        margin-top: 85px;
+        padding: 0px 0px;
+        gap: 75px;
+    }
+
+    .ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
+    .ourcommitment__textwrapper__title {
+        margin-bottom: 40px;
+    }
+    
+    .ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
+    .ourcommitment__textwrapper__title h2 {
+       font-size:32px;
+    }
+
+    .ourcommitment .ourcommitment__text .ourcommitment__textwrapper p {
+       font-size:15px;
+    }
+}
