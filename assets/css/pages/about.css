@@ -52,7 +52,7 @@ our commitment
     display: flex;
     gap: 90px;
     margin-top:85px;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
 }
 
 .ourcommitment .ourcommitment__image {
@@ -73,6 +73,72 @@ our commitment
 .ourcommitment__textwrapper__title {
     margin-bottom: 48px;
 }
+
+/*
+================
+Uncompromising quality 
+================
+*/
+
+.uncompromising__wrapper {
+    position: relative;
+    width: 100%;
+    height: 562px;
+    margin-top:168px;
+}
+
+.uncompromising__wrapper::before {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 474px;
+    background-color: var(--darkgreyblue);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.uncompromising__wrapper 
+.uncompromising__wrapper__inner {
+    width:100%;
+    padding: 0px 85px 0px 85px;
+    display:flex;
+    gap: 96px;
+
+}
+
+.uncompromising__wrapper 
+.uncompromising__wrapper__inner
+.uncompromising__wrapper__inner__text {
+    flex:58%;
+    color:var(--lightcreambg);
+    margin-top: 187px;
+}
+.uncompromising__wrapper__inner__title {
+    margin-bottom: 32px;
+}
+.uncompromising__wrapper__inner__title h2 {
+    font-size: 32px;
+    text-align: left;
+}
+
+.uncompromising__wrapper 
+.uncompromising__wrapper__inner
+.uncompromising__wrapper__inner__image {
+    flex:42%;
+    background-image: url(../../images/uncompromisingquality.png);
+    background-repeat: no-repeat;
+    width:100%;
+    height:474px;
+}
+.uncompromising__wrapper__inner__text
+.uncompromising__wrapper__inner__text__para p {
+    text-align: left;
+}
+
+
+
 
 /*
 ================
@@ -147,6 +213,7 @@ Tab Responsive
         width: 100%;
         height: 400px;
         background:url("../../images/AboutBannertab.png") no-repeat;
+        background-size: cover;
     }
 
     .aboutbanner .herocontainer {
@@ -171,6 +238,8 @@ Tab Responsive
         margin-top: 85px;
         padding: 0px 0px;
         gap: 75px;
+        flex-wrap:wrap;
+}
     }
 
     .ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
