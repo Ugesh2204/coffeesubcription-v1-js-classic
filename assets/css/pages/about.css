@@ -200,6 +200,56 @@ Smart Responsive
         text-align: center;
     }
 
+    .uncompromising__wrapper {
+        position: relative;
+        width: 100%;
+        height: 650px;
+    } 
+
+    .uncompromising__wrapper::before {
+        content: "";
+        position: absolute;
+        bottom: 60px;
+        left: 0px;
+        width: 100%;
+        height:513px;
+       
+    }
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner {
+        width: 100%;
+        padding: 0px 25px 0px 25px;
+        display: flex;
+        flex-direction:column-reverse;
+        gap:25px;  
+    }
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner .uncompromising__wrapper__inner__text {
+        color: var(--lightcreambg);
+        margin-top:0px;
+        flex:100%;
+    }
+
+    .uncompromising__wrapper__inner__title h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .uncompromising__wrapper__inner__text .uncompromising__wrapper__inner__text__para p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner .uncompromising__wrapper__inner__image {
+        background-image: url(../../images/uncompromisingmobile.png);
+        width: 100%;
+        min-height:170px;
+        flex:100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
 }
 
 /*
@@ -238,9 +288,9 @@ Tab Responsive
         margin-top: 85px;
         padding: 0px 0px;
         gap: 75px;
-        flex-wrap:wrap;
-}
+        flex-wrap:nowrap;
     }
+    
 
     .ourcommitment .ourcommitment__text .ourcommitment__textwrapper 
     .ourcommitment__textwrapper__title {
@@ -255,4 +305,46 @@ Tab Responsive
     .ourcommitment .ourcommitment__text .ourcommitment__textwrapper p {
        font-size:15px;
     }
+
+    .uncompromising__wrapper {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        /* margin-top: 168px;*/
+    } 
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner {
+        width: 100%;
+        padding: 0px 60px 0px 60px;
+        display: flex;
+        flex-direction:column-reverse;
+        gap:25px;  
+    }
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner .uncompromising__wrapper__inner__text {
+        color: var(--lightcreambg);
+        margin-top:0px;
+        flex:100%;
+    }
+
+    .uncompromising__wrapper__inner__title h2 {
+        text-align: center;
+    }
+
+    .uncompromising__wrapper__inner__text .uncompromising__wrapper__inner__text__para p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .uncompromising__wrapper .uncompromising__wrapper__inner .uncompromising__wrapper__inner__image {
+        background-image: url(../../images/uncompromisingtab.png);
+        width: 100%;
+        min-height:300px;
+        flex:100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;    
+    }
+
+    
 }
