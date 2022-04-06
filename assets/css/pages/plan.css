@@ -1,0 +1,31 @@
+.plan__wrapper {
+    padding: 0px 85px 0px 85px;
+    display: flex;
+    gap: 50px;
+}
+
+.plan__wrapper .plan__sidenav {
+    flex: 30%;
+    background-color:blueviolet;
+}
+
+ .plan__wrapper .plan__container {
+    flex:70%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.preference__cards {
+    display: flex;
+    gap: 25px;
+}
+
+.preference__cards .preference__cards__option{
+    background-color: var(--lightgray);
+    padding:32px 25px 25px 25px;
+    border-radius: 10px;
+}
+
+.preference__cards__option h4 {
+    margin-bottom:32px;
+}
