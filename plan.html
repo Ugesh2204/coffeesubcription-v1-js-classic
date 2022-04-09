@@ -8,7 +8,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
@@ -60,7 +62,7 @@
       <div class="plan__wrapper">
           <div class="plan__sidenav">
               <ol>
-                  <li><a href="#"><h4>Preferences</h4></a></li>
+                  <li><a href="#preference_options" class="sidenav"><h4>Preferences</h4></a></li>
                   <li><a href="#"><h4>Bean Type</h4></a></li>
                   <li><a href="#"><h4>Quantity</h4></a></li>
                   <li><a href="#"><h4>Grind</h4> <Option></Option></a></li>
@@ -69,7 +71,7 @@
           <div class="plan__container">
               <div class="preferencescontainer">
                 <div class="preference__title">
-                  <h3>How do you drink your coffee?<h3>
+                  <h3>How do you drink your coffee?</h3>
                     <button type="button" class="accordion-btn">
                         <span class="up-icon">
                             <i class="fas fa-chevron-up"></i>
@@ -79,7 +81,24 @@
                         </span>
                     </button>
                 </div>
-                <div class="preference__cards">
+                <div id="preference_options" class="preference__cards card-text">
+                </div>
+              </div>
+              <div class="beantypecontainer">
+                <div class="preference__title">
+                 <h3>What type of coffee?</h3>
+                    <button type="button" class="accordion-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div id="preference_options" class="preference__cards card-text">
+                  <p>adfadfdasf</p>
+                  <p>asjdadjasdga</p>
                 </div>
               </div>
           </div>
