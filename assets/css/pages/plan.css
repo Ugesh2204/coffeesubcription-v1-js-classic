@@ -7,6 +7,7 @@ Plan wrapper layout
     padding: 0px 85px 0px 85px;
     display: flex;
     gap: 50px;
+    margin-top:100px;
 }
 
 .plan__wrapper .plan__sidenav {
@@ -16,7 +17,7 @@ Plan wrapper layout
 
  .plan__wrapper .plan__container {
     flex:85%;
-    height: 100vh;
+  
     /* background-color: aquamarine; */
 }
 
@@ -27,17 +28,22 @@ Accordion icon show hide
 ================
 */
 
-.preferencescontainer .preference__title, .beantypecontainer .preference__title {
+.plan__container--space {
+    margin-bottom:80px;
+}
+
+.plan__container .option__title {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.preference__title button {
+.option__title button {
  background-color:transparent;
  border: none;
 }
-.preference__title .accordion-btn .up-icon i, .preference__title .accordion-btn .down-icon i  {
+.option__title .accordion-btn .up-icon i, .option__title .accordion-btn .down-icon i  {
     font-size:1.5rem;
     color:var(--darkcyan);
 }
@@ -61,20 +67,20 @@ card option layouts
 ================
 */
 
-.preferencecardwrapper {
+.globalcardwrapper {
     display: flex;
     gap: 25px;
     max-height: 300px;
 }
 
-.preference__cards .preference__cards__option{
+.globalcardwrapper .global__cards__option{
     background-color: var(--lightgray);
     padding:32px 25px 85px 25px;
     border-radius: 10px;
     flex: 33.3%;
 }
 
-.preference__cards__option h4 {
+.global_cards__option h4 {
     margin-bottom:32px;
 }
 

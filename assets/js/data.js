@@ -50,7 +50,86 @@ const plan = [
         }
             
         ]
+    },  
+    {
+        type: 'Quantity',
+        details : [
+        {
+            id: '1e17c38f-4d15-461d-a1cf-736db86eec16',
+            name: '250g',
+            description : 'Perfect for the solo drinker. Yields about 12 delicious cups.',
+            status: 'false'
+        },
+
+        {
+            id: '9dcd0fe2-1d64-4ba4-872d-30671ecf8a77',
+            name: '500g',
+            description : 'Perfect option for a couple. Yields about 40 delectable cups.',
+            status: 'false'
+        },
+
+        {
+            id: '0669924a-0f1d-470d-be9c-0b3cb95f1fa9',
+            name: '1000g',
+            description : 'Perfect for offices and events. Yields about 90 delightful cups.',
+            status: 'false'
+        }
+            
+        ]
+    },
+    {
+        type: 'Grind Option',
+        details : [
+        {
+            id: '6z17c38f-4d15-461d-a1cf-736db86eez09',
+            name: 'Wholebean',
+            description : 'Best choice if you cherish the full sensory experience',
+            status: 'false'
+        },
+
+        {
+            id: '2dcd0fe2-1d64-4ba4-872d-30671ecf8a05',
+            name: 'Filter',
+            description : 'For drip or pour-over coffee methods such as V60 or Aeropress',
+            status: 'false'
+        },
+
+        {
+            id: '0769924a-0f1d-470d-be9c-0bzcb95f1fz7',
+            name: 'Cafetiére',
+            description : ' Course ground beans specially suited for french press coffee',
+            status: 'false'
+        }
+            
+        ]
+    },
+    {
+        type: 'Deliveries',
+        details : [
+        {
+            id: '9917c38f-4d15-461d-a1cf-736db68eeb02',
+            name: 'Every week',
+            description : '$7.20 per shipment. Includes free first-class shipping.',
+            status: 'false'
+        },
+
+        {
+            id: '3rcd0fe2-1d64-4ba4-872d-30671ecf7777',
+            name: 'Every 2 weeks',
+            description : '$9.60 per shipment. Includes free priority shipping.',
+            status: 'false'
+        },
+
+        {
+            id: '1234924a-0f1d-470d-be9c-0bzcb95f1fff',
+            name: 'Every month',
+            description : '$12.00 per shipment. Includes free priority shipping.',
+            status: 'false'
+        }
+            
+        ]
     }
+
 ];
 
 export default plan;
