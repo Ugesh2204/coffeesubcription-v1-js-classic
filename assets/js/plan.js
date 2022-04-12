@@ -1,12 +1,9 @@
 $( document ).ready(function() {
     accordion()
-    ShowAlloption();
+    showoptions();
 });
 
 import plan from "./data.js";
-
-
-
 
 function accordion(){
 let accorbtns = document.querySelectorAll(".accordion-btn");
@@ -29,17 +26,7 @@ function sidenav(){
 }
 
 
-
-function ShowAlloption(){
-
-    showoptions()
-}
-
-
-
-
 function showoptions(){
-    
     for(let i = 0; i < plan.length; i++){
         console.log(plan[i]);
         let options = plan[i];
@@ -161,7 +148,6 @@ function showoptions(){
                                             <p>${cardinfo.description}</p>`;
             }
         }
-    
-    
+
     }
 }

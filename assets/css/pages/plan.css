@@ -1,3 +1,9 @@
+
+.howitswork--bgcolor {
+    background-color: var(--darkgreyblue);
+}
+
+
 /*
 ================
 Plan wrapper layout
@@ -12,13 +18,48 @@ Plan wrapper layout
 
 .plan__wrapper .plan__sidenav {
     flex:15%;
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
 }
 
  .plan__wrapper .plan__container {
     flex:85%;
   
     /* background-color: aquamarine; */
+}
+
+/*
+================
+Sidenav
+================
+*/
+
+.plan__sidenav ul li {
+  width:100%;
+  border-bottom:1px solid var(--lightgray);
+  padding: 25px 0px 25px;
+}
+
+.plan__sidenav ul li a {
+    color:var(--sidenav);
+}
+
+.plan__sidenav .plan__sidenav--removepadding {
+    padding-top:0px;
+}
+
+
+.plan__sidenav .sidenav .navinner__wrapper {
+    display: flex;
+    gap:30px;
+    margin-right:45px;
+}
+
+.plan__sidenav .sidenav .navinner__wrapper .sidenav__counter {
+    color:var(--sidenavnumber);
+}
+
+.plan__sidenav ul li a:hover > .navinner__wrapper .sidenav__counter {
+    color:var(--darkcyan);
 }
 
 
@@ -37,12 +78,18 @@ Accordion icon show hide
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    color:var(--accordiontitle);
 }
 
 .option__title button {
  background-color:transparent;
  border: none;
 }
+
+.option__title button:hover {
+    cursor: pointer;
+}
+
 .option__title .accordion-btn .up-icon i, .option__title .accordion-btn .down-icon i  {
     font-size:1.5rem;
     color:var(--darkcyan);
@@ -73,15 +120,15 @@ card option layouts
     max-height: 300px;
 }
 
-.globalcardwrapper .global__cards__option{
+.globalcardwrapper .global__cards__option {
     background-color: var(--lightgray);
     padding:32px 25px 85px 25px;
     border-radius: 10px;
     flex: 33.3%;
 }
 
-.global_cards__option h4 {
-    margin-bottom:32px;
+.globalcardwrapper .global__cards__option h4 {
+   margin-bottom: 25px;
 }
 
 /*Hide and show accordion text*/
@@ -94,4 +141,53 @@ card option layouts
    
 }
 
+
+/*
+================
+Order Summary
+================
+*/
+
+.order__summary {
+    background-color: var(--darkgreyblue);
+    padding:52px 65px;
+    border-radius: 10px;
+    margin-bottom:65px;
+}
+
+.order__summary .order__summary__text  p{
+  font-size: 24px;
+  color:#ffffff;
+  font-family:var(--ff-primary);
+}
+
+.order__summary .order__summary__text .order {
+    color:var(--darkcyan);
+
+}
+
+.order__summary .order__summary__title h5 {
+    color:var(--lightgray);
+    font-size:16px;
+    font-weight: 100;
+    font-family: var(--ff-secondary);
+    margin-bottom:25px;
+}
+
+
+
+
+.createmy__plan {
+    margin-bottom:167px;
+    display: flex;
+    justify-content: right;
+}
+.createmyplan--btn {
+    padding: 19px 40px;
+    background-color:var(--lightgray);
+}
+
+.createmy__plan a {
+    font-size:18px;
+}
 

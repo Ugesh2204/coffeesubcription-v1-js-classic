@@ -57,16 +57,101 @@
   </div>
   <!--Banner end here-->
 
+    <!--How its work start -->
+    <div class="section">
+      <div class="howitswork howitswork--bgcolor">
+       
+        <div class="timelinecontainer">
+          <ul class="timelinecontainer__wrapper">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="howitswork__option__wrapper">
+          <div class="howitswork__box">
+            <h1 class="howitswork__box__title">01</h1>
+            <h4 class="howitswork__box__subtitle">Pick your coffee</h4>
+            <p>
+              Select from our evolving range of artisan coffees. Our beans are ethically
+              sourced and we pay fair prices for them. There are new coffees in all profiles
+              every month for you to try out.
+            </p>
+          </div>
+          <div class="howitswork__box">
+            <h1 class="howitswork__box__title">02</h1>
+            <h4 class="howitswork__box__subtitle">Pick your coffee</h4>
+            <p>
+              Choose the frequency
+              Customize your order frequency, quantity, even your roast style and grind type.
+              Pause, skip or cancel your subscription with no commitment through our online portal.
+            </p>
+          </div>
+          <div class="howitswork__box">
+            <h1 class="howitswork__box__title">03</h1>
+            <h4 class="howitswork__box__subtitle">Pick your coffee</h4>
+            <p>
+              Receive and enjoy!
+              We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+              world-class coffees curated to provide a distinct tasting experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--How its work end here -->
+
   <!--Plan section layout-->
   <div class="section">
       <div class="plan__wrapper">
           <div class="plan__sidenav">
-              <ol>
-                  <li><a href="#preference_options" class="sidenav"><h4>Preferences</h4></a></li>
-                  <li><a href="#"><h4>Bean Type</h4></a></li>
-                  <li><a href="#"><h4>Quantity</h4></a></li>
-                  <li><a href="#"><h4>Grind</h4> <Option></Option></a></li>
-              </ol>
+              <ul>
+                  <li class="plan__sidenav--removepadding">
+                    <a href="#preference_options" class="sidenav">
+                    <span class="navinner__wrapper">
+                      <span class="sidenav__counter"><h4>01</h4>
+                      </span>
+                      <h4>Preferences</h4>
+                    </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#preference_options" class="sidenav">
+                    <span class="navinner__wrapper">
+                      <span class="sidenav__counter"><h4>02</h4></span>
+                      <h4>Bean Type</h4>
+                    </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#preference_options" class="sidenav">
+                    <span class="navinner__wrapper">
+                      <span class="sidenav__counter"><h4>03</h4></span>
+                      <h4>Quantity</h4>
+                    </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#preference_options" class="sidenav">
+                    <span class="navinner__wrapper">
+                      <span class="sidenav__counter"><h4>04</h4></span>
+                      <h4>Grind</h4>
+                    </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#preference_options" class="sidenav">
+                    <span class="navinner__wrapper">
+                      <span class="sidenav__counter"><h4>05</h4></span>
+                      <h4>Deliveries</h4>
+                    </span>
+                    </a>
+                  </li>
+              </ul>
           </div>
           <div class="plan__container">
               <div class="preferencescontainer plan__container--space">
@@ -145,7 +230,25 @@
                 <div id="delivery_options" class="card-text">
                 </div>
               </div>
+              <!--order summary start here-->
+              <div class="order__summary">
+                <div class="order__summary__title">
+                  <h5>ORDER SUMMARY</h5>
+                </div>
+                <div class="order__summary__text">
+                  <p>“I drink my coffee using <span id="ordersum__preference" class="order">Capsules</span>, 
+                    with a <span id="ordersum__beantype" class="order">_____</span> type of bean.
+                    <span><span id="ordersum__quantity" class="order"></span><span id="order__grind" class="order">_____</span></span> , 
+                    sent to me <span id="ordersum_deliveries" class="order">_____</span>.”</p>
+                
+                  <!-- <p>“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”</p> -->
+                </div>
+              </div><!--order summary start here-->
+              <div class="createmy__plan">
+                <a href="plan.html" class="btn createmyplan--btn">Create your plan</a>
+              </div>
           </div>
+        
       </div>
 
   </div>
